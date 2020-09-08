@@ -1,14 +1,12 @@
 <template>
   <header class="site-header">
-    <p v-if="$store.state.menu === 'Please create a menu document'" class="logo">{{ $store.state.menu }}</p>
-    <nuxt-link to="/" class="logo">{{ $prismic.asText($store.state.menu.title) }}</nuxt-link>
-    <nav>
+    <div class="b-logo"></div>
+    <div class="b-menu">
       <ul>
-        <li v-for="menuLink in $store.state.menu.menu_links" :key="menuLink.id">
-          <prismic-link :field="menuLink.link">{{ $prismic.asText(menuLink.label) }}</prismic-link>
-        </li>
+        <li></li>
+        <li></li>
       </ul>
-    </nav>
+    </div>
   </header>
 </template>
 
