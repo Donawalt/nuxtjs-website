@@ -9,7 +9,7 @@ export default {
   name: 'Home',
   head () {
     return {
-      title: 'Studio Bihua | Lyon',
+      title: 'Studio Bihua | Contact',
     }
   }/* ,
   async asyncData({ $prismic, error }) {

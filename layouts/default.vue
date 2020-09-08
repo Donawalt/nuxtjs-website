@@ -1,19 +1,19 @@
 <template>
   <div>
-    <header-prismic/>
+    <header-bihua/>
     <nuxt />
-    <footer-prismic/>
+    <footer-bihua/>
   </div>
 </template>
 
 <script>
-import HeaderPrismic from '~/components/HeaderPrismic.vue'
-import FooterPrismic from '~/components/FooterPrismic.vue'
+import HeaderBihua from '~/components/HeaderBihua.vue'
+import FooterBihua from '~/components/FooterBihua.vue'
 
 export default {
   components: {
-    HeaderPrismic,
-    FooterPrismic
+    HeaderBihua,
+    FooterBihua
   },
   head () {
     return {

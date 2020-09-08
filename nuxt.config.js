@@ -1,11 +1,11 @@
 export default {
-  mode: 'universal',
-
+  mode: 'spa',
+  target: 'static',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'Nuxt + Prismic',
+    title: 'Studio Bihua | Lyon',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -28,8 +28,7 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/resetr.css',
-    '@/assets/css/common.css'
+    '@/assets/styles/main.scss'
   ],
 
   /*
@@ -50,7 +49,7 @@ export default {
   ],
 
   prismic: {
-    endpoint: 'https://your-repo-name.cdn.prismic.io/api/v2',
+    endpoint: 'https://studio-bihua.cdn.prismic.io/api/v2',
     linkResolver: '@/plugins/link-resolver',
     htmlSerializer: '@/plugins/html-serializer',
   },
